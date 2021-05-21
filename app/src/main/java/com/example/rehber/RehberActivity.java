@@ -187,6 +187,7 @@ public class RehberActivity extends AppCompatActivity implements SearchView.OnQu
     @Override
     public boolean onQueryTextChange(String newText) {
         System.out.println("Harf girdikce Sonucu "+newText);
+        adapter.getFilter().filter(newText);
         return true;
     }
 
